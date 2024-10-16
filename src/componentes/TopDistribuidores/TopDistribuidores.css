@@ -1,0 +1,19 @@
+.top-distribuidores {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ h1{
+    color: #37D111;
+    margin-left: 300px;
+}
+
+.top-distribuidores .distribuidores-wrapper {
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+
+.top-distribuidores .distribuidores-wrapper:last-child {
+    margin-right: 0; 
+}
