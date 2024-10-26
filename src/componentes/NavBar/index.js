@@ -5,7 +5,6 @@ const NavBar = () => {
     return(
         <div className="navbar">
             <img src="/img/logo.png" alt="" />
-
             <div>
                 <MenuLink to="/">
                 <p>Home</p>

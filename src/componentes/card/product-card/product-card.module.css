@@ -1,0 +1,100 @@
+.cardProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+  overflow-y: hidden;
+}
+.contextProduct {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.headerProduct {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  color: #000;
+}
+
+.headerProduct p:first-child {
+  padding-left: 20px;
+}
+
+.headerProduct p{
+  padding-right: 20px;
+}
+
+
+.descriptionAreaProductCard{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textAreaProductCard {
+  padding-top: 12px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+  max-width: 400px;
+}
+
+.textAreaProductCard p{
+  font-size: medium;
+  font-size: 14px;
+}
+
+.locationProductCard {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  border-left: 2px solid black;
+  padding-right: 20px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+
+.locationProductCard p{
+  font-size: medium;
+  font-size: 20px;
+}
+
+.profileProductCard {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c700;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.profileProductCard img {
+  width: 100%;
+  height:60%;
+}
+
+.profileDescriptionProductCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.profileDescriptionProductCard p:first-child {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
