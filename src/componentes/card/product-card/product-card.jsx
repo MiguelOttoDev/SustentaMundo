@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import styles from './product-card.module.css';
 
-const ProductCard = ({ sale }) => {
-  return (
-    <div className={styles.cardProduct}>
-      <div className={styles.contextProduct}>
+const ProductCard = ({ sale, callBack, isSelected }) => {
 
+  return (
+    <div className={isSelected ? styles.cardProductSelected : styles.cardProduct}
+     onClick={callBack}
+    >
+      <div className={styles.contextProduct}>
         <div className={styles.headerProduct}>
           <p>{sale.product.name} - {sale.product.weight}</p>
           <p>{sale.smcs} SMC</p>

@@ -4,20 +4,23 @@ import 'leaflet/dist/leaflet.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pag/Home';
 import Produtos from './Pag/produtos/produtos.jsx';
+import { SmcProvider } from './context/smcContext.jsx';
+
 function AppRoutes() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/produtos" element={<Produtos />} />
-          <Route path="/doacao" element={<h1>Doação</h1>} />
-          <Route path="/sobre" element={<h1>Sobre</h1>} />
-          <Route path="*" element={<div>Pagina nao encontrada</div>} />
-        </Routes>
-      </BrowserRouter>
+      <SmcProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/produtos" element={<Produtos />} />
+            <Route path="/doacao" element={<h1>Doação</h1>} />
+            <Route path="/sobre" element={<h1>Sobre</h1>} />
+            <Route path="*" element={<div>Pagina nao encontrada</div>} />
+          </Routes>
+        </BrowserRouter>
+      </SmcProvider>
     </div>
   );
 }

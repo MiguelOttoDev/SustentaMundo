@@ -1,4 +1,5 @@
 .cardProduct {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +9,19 @@
   width: 100%;
   overflow-y: hidden;
 }
+
+.cardProductSelected {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(78, 209, 17, 0.27);
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
 .contextProduct {
   display: flex;
   flex-direction: column;

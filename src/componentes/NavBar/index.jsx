@@ -26,7 +26,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className={styles.buySmcContainer}>
-        <BuySmcCard quantity={43}/>
+        <BuySmcCard/>
       </div>
     </div>
   );

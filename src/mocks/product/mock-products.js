@@ -1,5 +1,6 @@
 const mockSales = [
   {
+    id: 1,
     smcs: 150,
     product: {
       name: 'name',

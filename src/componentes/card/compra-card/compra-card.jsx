@@ -1,6 +1,43 @@
+import { useEffect, useState } from 'react';
 import styles from './compra-card.module.css';
+import { useSmc } from '../../../context/smcContext';
 
-const CompraCard = ({ quantity, price, productName, callBack }) => {
+const CompraCard = ({sale, exhibitionSales, setExhibitionSales, setSelectedSale}) => {
+
+  const [quantity, setQuantity] = useState(1)
+  const [price, setPrice] = useState(0)
+  const {setSmc} = useSmc()
+  
+  const removeSaleFromTheList = () => {
+    const updatedSales = exhibitionSales.filter((item) => item.id !== sale.id);
+    setExhibitionSales(updatedSales)
+  }
+  
+  const topUpSmcWallet = (smcWallet) => {
+    setSmc(smcWallet - price)
+  }
+  
+  const comprar = () => {
+    const actualSmcWaller = Number(localStorage.getItem('smc'))
+    if(actualSmcWaller >= price){
+      topUpSmcWallet(actualSmcWaller)
+      removeSaleFromTheList()
+      setSelectedSale(null)
+    }
+  }
+
+  useEffect(() => {
+    if(sale) setPrice(sale.smcs)
+
+  }, [sale])
+
+
+  useEffect(() => {
+    if( sale && quantity > 0 && quantity < 100) {
+      setPrice(Number(sale.smcs) * Number(quantity))
+    }
+  }, [quantity])
+
   return (
     <div className={styles.card}>
       <div className={styles.header}>
@@ -8,21 +45,31 @@ const CompraCard = ({ quantity, price, productName, callBack }) => {
       </div>
       <div className={styles.content}>
         <div className={styles.productName}>
-          <p>{productName}</p>
+          <p>{sale ? sale.product.name : ''}</p>
         </div>
         <div className={styles.quantity}>
           <p>QUANTIDADE:</p>
           <div>
-            <p>{quantity}</p>
+            <input 
+            type="number"
+            value={quantity}
+            onChange={(e) => setQuantity(e.target.value === "" ? "" : Number(e.target.value))}
+            disabled={sale ? false : true}
+            />
           </div>
         </div>
         <div className={styles.price}>
           <p>PREÇO:</p>
           <div>
-            <p>{price}</p>
+            <p>{price} SMC</p>
           </div>
         </div>
-        <button className={styles.button} onClick={callBack}>
+        <button className={sale ? styles.buttonSelected : styles.button}
+         onClick={() => {
+          if(sale){
+            comprar()
+          }
+        }}>
           <p>COMPRAR</p>
         </button>
       </div>
