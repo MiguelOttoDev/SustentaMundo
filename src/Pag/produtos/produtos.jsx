@@ -39,12 +39,15 @@ const Produtos = () => {
         <div className={styles.interactionCardsArea}>
           <CompraCard
            sale={selectedSale}
-           exhibitionSales={exhibitionSales}
+           exhibitionSales={mockSales}
            setExhibitionSales={setExhibitionSales}
            setSelectedSale={setSelectedSale}
           />
 
-          <FilterCard country={'BR'} state={'SP'} city={'Osasco'}/>
+          <FilterCard
+           exhibitions={mockSales}
+           setExhibitions={setExhibitionSales}
+           />
         </div>
       </div>
     </div>

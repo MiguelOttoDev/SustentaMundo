@@ -53,8 +53,14 @@ const CompraCard = ({sale, exhibitionSales, setExhibitionSales, setSelectedSale}
             <input 
             type="number"
             value={quantity}
-            onChange={(e) => setQuantity(e.target.value === "" ? "" : Number(e.target.value))}
+            onChange={(e) => {
+              const value = e.target.value;
+              if (value.length <= 2) {
+                setQuantity(value === "" ? "" : Number(value));
+              }
+            }}
             disabled={sale ? false : true}
+            maxLength={2}
             />
           </div>
         </div>
