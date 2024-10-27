@@ -39,7 +39,7 @@ const Produtos = () => {
         <div className={styles.interactionCardsArea}>
           <CompraCard
            sale={selectedSale}
-           exhibitionSales={mockSales}
+           exhibitionSales={exhibitionSales}
            setExhibitionSales={setExhibitionSales}
            setSelectedSale={setSelectedSale}
           />

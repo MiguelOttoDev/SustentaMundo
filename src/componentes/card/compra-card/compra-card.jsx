@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './compra-card.module.css';
 import { useSmc } from '../../../context/smcContext';
+import Swal from 'sweetalert2';
 
 const CompraCard = ({sale, exhibitionSales, setExhibitionSales, setSelectedSale}) => {
 
@@ -23,11 +24,29 @@ const CompraCard = ({sale, exhibitionSales, setExhibitionSales, setSelectedSale}
       topUpSmcWallet(actualSmcWaller)
       removeSaleFromTheList()
       setSelectedSale(null)
+      Swal.fire({
+        icon: 'success',
+        title: 'Compra Efetuada!',
+        text: 'Sua compra foi realizada com sucesso.',
+        confirmButtonText: 'OK'
+      });
+    }else{
+      Swal.fire({
+        icon: 'error',
+        title: 'Saldo Insuficiente',
+        text: 'Você não tem saldo suficiente para completar esta compra.',
+        confirmButtonText: 'OK'
+      });
     }
   }
 
   useEffect(() => {
-    if(sale) setPrice(sale.smcs)
+    if(sale){
+      setPrice(sale.smcs * quantity)
+    } else if(!sale && price > 0){
+      setPrice(0)
+      setQuantity(1)
+    }
 
   }, [sale])
 
