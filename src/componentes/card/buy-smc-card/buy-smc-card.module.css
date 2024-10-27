@@ -1,0 +1,32 @@
+.content{
+  height: 30px;
+  width: 250px;
+  background-color: rgba(78, 209, 17, 0.27);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
+.content p{
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.plus{
+  height: 100%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c700;
+}
+
+.plus img{
+  margin-left: 0px;
+  height: 20px;
+  width: 20px;
+}
