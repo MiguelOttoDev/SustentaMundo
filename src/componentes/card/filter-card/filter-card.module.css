@@ -1,0 +1,150 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  background-color: #00c700;
+  border-radius: 20px;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.header p{
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.country{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.country div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.country div p{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+.country p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+
+.state{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.state div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.state p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.state div p{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+
+.city{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.city div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.city p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.city div p{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+.button{
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button p{
+  font-weight: bold;
+  font-size: 25px;
+  color: #00c700;
+}
