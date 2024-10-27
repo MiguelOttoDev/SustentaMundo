@@ -18,8 +18,12 @@ const Produtos = () => {
               <ProductCard key={sale.id} sale={sale} />
           ))}
         </div>
+        
+        <div className={styles.interactionCardsArea}>
           <CompraCard price={1} productName={'name'} quantity={1}/>
+
           <FilterCard country={'BR'} state={'SP'} city={'Osasco'}/>
+        </div>
       </div>
     </div>
   );
