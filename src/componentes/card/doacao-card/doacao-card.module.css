@@ -1,0 +1,130 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+  background-color: #00c700;
+  border-radius: 20px;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.header p{
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+
+.communityName{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 35px;
+  width: 100%;
+}
+
+.communityName p{
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.value{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.value div{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.value div input{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+}
+
+.value p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.buttonSelected{
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonSelected p{
+  font-weight: bold;
+  font-size: 25px;
+  color: #00c700;
+}
+
+.button{
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.button p{
+  font-weight: bold;
+  font-size: 25px;
+  color: gray;
+}

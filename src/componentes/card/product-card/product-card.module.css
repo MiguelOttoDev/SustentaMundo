@@ -9,6 +9,7 @@
   width: 100%;
   overflow-y: hidden;
   margin-bottom: 30px;
+  z-index: 1;
 }
 
 .cardProductSelected {
@@ -22,6 +23,7 @@
   width: 100%;
   overflow-y: hidden;
   margin-bottom: 30px;
+  z-index: 1;
 }
 
 .contextProduct {

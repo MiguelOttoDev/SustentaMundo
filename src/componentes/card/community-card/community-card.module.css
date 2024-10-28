@@ -8,6 +8,7 @@
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1;
 }
 
 .cardClicked{

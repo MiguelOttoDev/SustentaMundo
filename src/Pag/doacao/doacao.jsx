@@ -3,6 +3,7 @@ import FilterCard from "../../componentes/card/filter-card/filter-card.jsx";
 import styles from './doacao.module.css';
 import mockCommunities from "../../mocks/community/mock-community.js";
 import CommunityCard from "../../componentes/card/community-card/community-card.jsx";
+import DoacaoCard from "../../componentes/card/doacao-card/doacao-card.jsx";
 
 const Doacao = () => {
   const [exhibitionCommunities, setExhibitionCommunities] = useState(mockCommunities)
@@ -36,9 +37,13 @@ const Doacao = () => {
         </div>
         
         <div className={styles.interactionCardsArea}>
-          
+          <DoacaoCard
+          community={selectedCommunity}
+          setSelectedCommunity={setSelectedCommunity}
+          />
+
           <FilterCard
-           exhibitions={exhibitionCommunities}
+           exhibitions={mockCommunities}
            setExhibitions={setExhibitionCommunities}
            />
         </div>
