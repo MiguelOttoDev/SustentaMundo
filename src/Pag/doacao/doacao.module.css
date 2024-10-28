@@ -1,0 +1,32 @@
+
+.global{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.productsMain{
+  margin-left: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productsTitle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardsArea{
+  width: 40%;
+  height: 100%;
+}
+
+.interactionCardsArea{
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
