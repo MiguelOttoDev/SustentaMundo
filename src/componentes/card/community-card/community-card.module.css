@@ -7,9 +7,31 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
+.cardClicked{
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  border: solid black 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+
 .card img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 50%;
+  width: 100%;
+}
+
+.cardClicked img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 50%;

@@ -11,6 +11,7 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .productsTitle{
@@ -20,8 +21,11 @@
 }
 
 .cardsArea{
-  width: 40%;
+  width: 60%;
   height: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .interactionCardsArea{

@@ -29,6 +29,8 @@ const Doacao = () => {
             exhibitionCommunities.map((community) => (
               <CommunityCard 
                 community={community}
+                callback={() => selectCommunity(community)}
+                isSelected={selectedCommunity === community}
               />
           ))}
         </div>
