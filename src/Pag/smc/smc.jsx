@@ -10,6 +10,9 @@ import PaySmcCard from "../../componentes/card/pay-smc-card/pay-smc-card.jsx";
 
 const SmcScreen = () => {
   const [exhibitionSmcPack, setExhibitionSmcPack] = useState(mockSmcPack)
+  const [priceToPay, setPriceToPay] = useState(0)
+  const [smcQuantity, setSmcQuantity] = useState(0)
+
 
 
   
@@ -26,12 +29,21 @@ const SmcScreen = () => {
               <SmcPackCard
                key={smc.id} 
                smcPack={smc}
+               priceToPay={priceToPay}
+               setPriceToPay={setPriceToPay}
+               smcQuantity={smcQuantity}
+               setSmcQuantity={setSmcQuantity}
               />
           ))}
         </div>
         
         <div className={styles.interactionCardsArea}>
-           <PaySmcCard/>
+           <PaySmcCard
+           price={priceToPay}
+           quantity={smcQuantity}
+           setPriceToPay={setPriceToPay}
+           setSmcQuantity={setSmcQuantity}
+           />
         </div>
       </div>
     </div>

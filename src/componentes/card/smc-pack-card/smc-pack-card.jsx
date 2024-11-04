@@ -1,7 +1,13 @@
 import styles from './smc-pack-card.module.css';
 import plusIcon from '../../../imgs/plus.png';
-const SmcPackCard = ({smcPack}) => {
+const SmcPackCard = ({smcPack, priceToPay,setPriceToPay, setSmcQuantity, smcQuantity}) => {
+
   const convertedValue = (smcPack.price / 100).toFixed(2)
+  const addOnWallet = () => {
+    setSmcQuantity(smcQuantity + smcPack.quantity)
+    setPriceToPay(((smcPack.price / 100) + priceToPay))
+  }
+
   return (
     <div className={styles.card}>
       <div className={styles.content}>
@@ -15,7 +21,7 @@ const SmcPackCard = ({smcPack}) => {
         </div>
 
       </div>
-      <img src={plusIcon} alt="add icon"/>
+      <img src={plusIcon} onClick={() => addOnWallet()} alt="add icon"/>
     </div>
   );
 }
