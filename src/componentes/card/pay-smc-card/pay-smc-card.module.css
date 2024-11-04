@@ -1,0 +1,162 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  background-color: #00c700;
+  border-radius: 20px;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.header p{
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+
+.productName{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 35px;
+  width: 100%;
+}
+
+.productName p{
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.quantity{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity div{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.quantity div input{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+}
+
+.quantity p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+
+.price{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.price p{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.price div p{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+
+.buttonSelected{
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonSelected p{
+  font-weight: bold;
+  font-size: 25px;
+  color: #00c700;
+}
+
+.button{
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.button p{
+  font-weight: bold;
+  font-size: 25px;
+  color: gray;
+}

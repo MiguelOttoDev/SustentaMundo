@@ -5,6 +5,7 @@ import ProductCard from "../../componentes/card/product-card/product-card.jsx";
 import styles from './produtos.module.css';
 import mockSmcPack from "../../mocks/smc/mock-smc-pack.js";
 import SmcPackCard from "../../componentes/card/smc-pack-card/smc-pack-card.jsx";
+import PaySmcCard from "../../componentes/card/pay-smc-card/pay-smc-card.jsx";
 
 
 const SmcScreen = () => {
@@ -30,17 +31,7 @@ const SmcScreen = () => {
         </div>
         
         <div className={styles.interactionCardsArea}>
-          {/* <CompraCard
-           sale={selectedSale}
-           exhibitionSales={exhibitionSales}
-           setExhibitionSales={setExhibitionSales}
-           setSelectedSale={setSelectedSale}
-          />
-
-          <FilterCard
-           exhibitions={mockSales}
-           setExhibitions={setExhibitionSales}
-           /> */}
+           <PaySmcCard/>
         </div>
       </div>
     </div>
