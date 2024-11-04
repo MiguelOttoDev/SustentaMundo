@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
-
+import styles from './Mapa.module.css'
 const worldMapURL = "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson";
 const brazilStatesMapURL = "https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson";
 
@@ -190,13 +190,13 @@ const MapaInterativo = ({ setTitulo, setDistribuidores }) => {
   return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{
-              width: '100%',
-              maxWidth: '800px',
-              height: '800px',
-              aspectRatio: '16 / 9',
-              overflow: 'hidden',
-              position: 'relative'
-          }}>
+                width: '100%',
+                maxWidth: '800px',
+                height: 'auto', 
+                paddingTop: '56.25%', 
+                position: 'relative',
+                overflow: 'hidden'
+}}>
               <ComposableMap
                   projection="geoMercator"
                   projectionConfig={{
@@ -250,7 +250,7 @@ const MapaInterativo = ({ setTitulo, setDistribuidores }) => {
           </div>
 
           {paisSelecionado === "Brazil" && (
-              <button onClick={voltarNivel} style={{ marginTop: '10px' }}>Voltar</button>
+              <button onClick={voltarNivel} style={{ marginTop: '10px' }} className={styles.button}>Voltar</button>
           )}
       </div>
   );
