@@ -1,0 +1,209 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .formContainer {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer {
+    width: 50%;
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #4CAF50;
+    font-size: 1.2rem;
+    outline: none;
+  }
+  
+  button {
+    width: 80%;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .registerButton, .loginButton {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+  }
+  
+  .accountType {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .accountType label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #4CAF50;
+  }
+  
+  .accountType input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilo do texto "Cadastre-se" como link */
+  .registerText {
+    color: #4CAF50;.container {
+        display: flex;
+        height: 100vh;
+      }
+      
+      .formContainer {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .logo {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+      
+      .imageContainer {
+        width: 50%;
+      }
+      
+      .backgroundImage {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+      
+      input {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 2px solid #4CAF50;
+        font-size: 1.2rem;
+        outline: none;
+      }
+      
+      button {
+        width: 80%;
+        padding: 0.7rem;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 25px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+      .registerButton, .loginButton {
+        width: 60%;
+        font-size: 1.2rem;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+        color: #4CAF50;
+        margin-bottom: 1rem;
+      }
+      
+      .accountType {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1rem 0;
+      }
+      
+      .accountType label {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #4CAF50;
+      }
+      
+      .accountType input[type="radio"] {
+        margin-right: 5px;
+      }
+      
+      /* Estilo do texto "Cadastre-se" como link */
+      .registerText {
+        color: #4CAF50;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .registerText:hover {
+        color: #45a049;
+      }
+      
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .registerText:hover {
+    color: #45a049;
+  }
+
+  /* Estilo do texto "Cadastre-se" para combinar com "Usuário" e "Senha" */
+.registerText {
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 1.5rem; /* Tamanho grande */
+    font-weight: bold; /* Negrito */
+    text-decoration: underline; /* Sublinhado */
+    margin-bottom: 1rem;
+  }
+  
+  .registerText:hover {
+    color: #45a049;
+  }
+  

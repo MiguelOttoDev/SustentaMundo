@@ -6,6 +6,8 @@ import Home from './Pag/Home';
 import Produtos from './Pag/produtos/produtos.jsx';
 import { SmcProvider } from './context/smcContext.jsx';
 import Doacao from './Pag/doacao/doacao.jsx';
+import Login from './Pag/login/login.jsx';  // Novo import
+import Register from './Pag/register/register.jsx';  // Novo import
 import SmcScreen from './Pag/smc/smc.jsx';
 
 function AppRoutes() {
@@ -18,6 +20,8 @@ function AppRoutes() {
             <Route path="/" element={<Home />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/doacao" element={<Doacao />} />
+            <Route path="/login" element={<Login />} />  {/* Nova rota */}
+            <Route path="/register" element={<Register />} />  {/* Nova rota */}
             <Route path="/smc" element={<SmcScreen />} />
             <Route path="/sobre" element={<h1>Sobre</h1>} />
             <Route path="*" element={<div>Pagina nao encontrada</div>} />
