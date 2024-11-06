@@ -1,0 +1,43 @@
+.compromisso{
+    margin-top: 30px;
+}
+
+.compromisso h2{   
+    font-size: 40px;
+    color: #37D111;
+}
+
+.compromisso p{
+    font-size: 38px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .compromisso h2 {
+        font-size: 32px;
+    }
+    .compromisso p {
+        font-size: 28px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .compromisso h2 {
+        font-size: 28px; 
+    }
+    .compromisso p {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .compromisso h2 {
+        font-size: 24px;
+    }
+    .compromisso p {
+        font-size: 18px; 
+        padding: 0 10px; 
+    }
+}

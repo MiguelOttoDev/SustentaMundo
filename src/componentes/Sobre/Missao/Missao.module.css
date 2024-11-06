@@ -1,0 +1,86 @@
+.text {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    height: 526px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../imgs/img-missao.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.text h2 {   
+    font-size: 40px;
+    color: #fff;
+}
+
+.text p {
+    font-size: 38px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .text {
+        height: 400px; /* Reduz a altura para telas médias */
+    }
+    .text h2 {
+        font-size: 32px; /* Diminui o tamanho do título */
+    }
+    .text p {
+        font-size: 28px; /* Diminui o tamanho do parágrafo */
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        height: 300px; /* Reduz ainda mais a altura para tablets */
+    }
+    .text h2 {
+        font-size: 28px;
+    }
+    .text p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        height: 250px; /* Altura ajustada para smartphones */
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+    .text h2 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+}

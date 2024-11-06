@@ -7,7 +7,7 @@ import Produtos from './Pag/produtos/produtos.jsx';
 import { SmcProvider } from './context/smcContext.jsx';
 import Doacao from './Pag/doacao/doacao.jsx';
 import SmcScreen from './Pag/smc/smc.jsx';
-
+import Sobre from './Pag/sobre/sobre.jsx';
 function AppRoutes() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function AppRoutes() {
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/doacao" element={<Doacao />} />
             <Route path="/smc" element={<SmcScreen />} />
-            <Route path="/sobre" element={<h1>Sobre</h1>} />
+            <Route path="/sobre" element={<Sobre/>} />
             <Route path="*" element={<div>Pagina nao encontrada</div>} />
           </Routes>
         </BrowserRouter>
