@@ -34,6 +34,7 @@ const Register = () => {
           type="text"
           placeholder="Username"
           value={username}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setUsername(e.target.value)}
         />
         
@@ -42,14 +43,16 @@ const Register = () => {
           type="password"
           placeholder="Insira a sua senha"
           value={password}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setPassword(e.target.value)}
         />
         
         <h2>Confirme a senha:</h2>
         <input
           type="password"
-          placeholder="Confirme a senha"
+          placeholder="Confirme a Senha"
           value={confirmPassword}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
         
@@ -58,6 +61,7 @@ const Register = () => {
           type="email"
           placeholder="Insira seu e-mail"
           value={email}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setEmail(e.target.value)}
         />
         

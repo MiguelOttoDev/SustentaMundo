@@ -27,6 +27,7 @@ const Login = () => {
           type="text"
           placeholder="Username"
           value={username}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setUsername(e.target.value)}
         />
         
@@ -35,6 +36,7 @@ const Login = () => {
           type="password"
           placeholder="Digite a sua senha:"
           value={password}
+          className={styles.input}  // Adicionando className específico
           onChange={(e) => setPassword(e.target.value)}
         />
         

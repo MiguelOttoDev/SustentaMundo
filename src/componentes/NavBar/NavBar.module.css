@@ -1,115 +1,74 @@
 .navbar {
     display: flex;
-    flex-direction: column; /* Mantenha a direção como coluna */
+    flex-direction: column;
     width: 100%;
-    height: auto; /* Ajuste a altura para auto */
-}
-
-.navbarContent {
+    height: auto;
+  }
+  
+  .navbarContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-    height: 100%;
     width: 100%;
     background-color: #37D111;
     padding: 10px;
-
-}
-
-.navbar div {
+  }
+  
+  .navbarDiv {
     display: flex;
     margin: 0;
-}
-
-.navbar p {
-
-   color: #fff;
-   font-size: 20px;
-   margin-right: 30px;
-   font-weight: bold;
-
-}
-
-.navbar img {
+  }
+  
+  .navbarText {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbarImage {
     margin-left: 20px;
-
-    width: 80px; /* Tamanho da imagem padrão */
-    height: auto; /* Ajuste para manter a proporção */
-}
-
-/* Media Query para telas menores */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Mantenha a direção como coluna */
-    }
-
-    .navbarContent {
-        flex-direction: column; /* Mude a direção para coluna em telas menores */
-        align-items: center; /* Centralize os itens */
-        padding: 10px; /* Reduza o padding */
-    }
-
-    .navbar p {
-        font-size: 18px; /* Reduz o tamanho da fonte em telas menores */
-         /* Ajuste o margin para espaçar verticalmente */
-    }
-
-    .navbar img {
-        width: 60px; /* Reduza o tamanho da imagem */
-    }
-}
-
-/* Media Query para smartphones */
-@media (max-width: 480px) {
-    .navbar p {
-        font-size: 16px; /* Reduz ainda mais o tamanho da fonte */
-         /* Espaçamento menor entre os itens */
-    }
-
-    .navbar img {
-        width: 50px; /* Reduz ainda mais o tamanho da imagem */
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-    .navbar {
-        height: auto;
-    }
-
-    .navbarContent {
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .navbar p {
-        font-size: 16px; 
-        margin-right: 10px;
-        
-    }
-
-    .navbar img {
-        width: 60px; 
-        height: 60px;
-
-    }
-}
-
-
-.buySmcContainer{
+    width: 80px;
+    height: auto;
+  }
+  
+  .buySmcContainer {
     display: flex;
     justify-content: end;
     width: 100%;
-}
-
-.buySmcContent{
-    height: 30px;
-    width: 250px;
-    background-color: rgba(78, 209, 17, 0.27);
-    border-bottom-left-radius: 10px;
-}
+  }
+  
+  /* Media Query para telas menores */
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+    }
+  
+    .navbarContent {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbarText {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  
+    .navbarImage {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbarText {
+      font-size: 16px;
+    }
+  
+    .navbarImage {
+      width: 50px;
+    }
+  }
+  
