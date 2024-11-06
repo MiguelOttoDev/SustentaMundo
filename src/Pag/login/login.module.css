@@ -27,7 +27,8 @@
     object-fit: cover;
   }
   
-  input {
+  /* Estilo específico para inputs */
+  .input {
     width: 100%;
     margin: 1rem 0;
     padding: 0.5rem;
@@ -37,7 +38,8 @@
     outline: none;
   }
   
-  button {
+  /* Estilo específico para o botão de login */
+  .loginButton {
     width: 80%;
     padding: 0.7rem;
     margin: 1rem 0;
@@ -50,12 +52,7 @@
     text-align: center;
   }
   
-  .registerButton, .loginButton {
-    width: 60%;
-    font-size: 1.2rem;
-  }
-  
-  button:hover {
+  .loginButton:hover {
     background-color: #45a049;
   }
   
@@ -65,44 +62,13 @@
     margin-bottom: 1rem;
   }
   
-  .accountType {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 1rem 0;
-  }
-  
-  .accountType label {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    color: #4CAF50;
-  }
-  
-  .accountType input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  /* Estilo do texto "Cadastre-se" como link */
+  /* Estilo do texto "Cadastre-se" */
   .registerText {
     color: #4CAF50;
     cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: underline;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .registerText:hover {
-    color: #45a049;
-  }
-
-  /* Estilo do texto "Cadastre-se" para combinar com "Usuário" e "Senha" */
-.registerText {
-    color: #4CAF50;
-    cursor: pointer;
-    font-size: 1.5rem; /* Tamanho grande */
-    font-weight: bold; /* Negrito */
-    text-decoration: underline; /* Sublinhado */
     margin-bottom: 1rem;
   }
   

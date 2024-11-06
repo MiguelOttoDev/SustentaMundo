@@ -23,10 +23,15 @@ const NavBar = () => {
           <MenuLink to="/sobre">
             <p className={styles.navbarText}>Sobre</p>
           </MenuLink>
+
+          {/* Novo Link para a página de Login */}
+          <MenuLink to="/login">
+            <p className={styles.navbarText}>Login</p>
+          </MenuLink>
         </div>
       </div>
       <div className={styles.buySmcContainer}>
-        <BuySmcCard/>
+        <BuySmcCard />
       </div>
     </div>
   );
