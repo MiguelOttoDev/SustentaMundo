@@ -1,19 +1,17 @@
 import Main from '../../componentes/Main';
 import TopDistribuidores from '../../componentes/TopDistribuidores';
-
+import { useState } from 'react';
 
 const Home = () => {
-    return(
+    const [titulo, setTitulo] = useState("Mundo");
+    const [distribuidores, setDistribuidores] = useState([]);
+
+    return (
         <div>
-        <Main/>
-    
-        <TopDistribuidores/>
-        
+            <Main setTitulo={setTitulo} setDistribuidores={setDistribuidores} />
+            <TopDistribuidores distribuidores={distribuidores} />
         </div>
-    )
-        
-
-
+    );
 }
 
-export default Home
+export default Home;
