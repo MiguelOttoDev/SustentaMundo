@@ -13,7 +13,7 @@
    .desc{
        text-align: justify;
        font-size: 38px;
-       max-width: 1200px; /* Ajuste conforme necessário */
+       max-width: 1200px; 
        margin: 0 auto;
    }
    
@@ -22,8 +22,7 @@
        height: 512px;
        top: 887px;
        left: 1389px;
-       gap: 0px;
-       opacity: 0px;
+       opacity: 1
        
    }
    
