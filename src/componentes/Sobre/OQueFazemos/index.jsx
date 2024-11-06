@@ -1,5 +1,4 @@
 import style from './OQueFazemos.module.css'
-import imgOQueFazemos from '../../../imgs/img-OQueFazemos.png'
 export default function OQueFazemos(){
     return(
         <>
@@ -7,7 +6,7 @@ export default function OQueFazemos(){
          <div className={style.container}>
             
             <div >
-                <img src={imgOQueFazemos} className={style.img} alt="Imagem" />
+                <img src="/img/img-OQueFazemos.png" className={style.img} alt="Imagem" />
             </div>
             <div className={style.desc}>
                 <p>

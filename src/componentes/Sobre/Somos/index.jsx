@@ -1,5 +1,5 @@
 import style from './Somos.module.css'
-import imgSomos from '../../../imgs/img-somos.png'
+
 export default function Somos(){
     return(
         <>
@@ -11,7 +11,7 @@ export default function Somos(){
                 </p>
             </div>
             <div >
-                <img src={imgSomos} className={style.img} alt="Imagem" />
+                <img src="/img/img-somos.png" className={style.img} alt="Imagem" />
             </div>
         </div>
         </>
