@@ -1,6 +1,8 @@
-import Main from '../../componentes/Main';
+// Home/index.js
+import React, { useState } from 'react';
+import Main from '../../componentes/Main'; // Ajuste o caminho conforme necessário
 import TopDistribuidores from '../../componentes/TopDistribuidores';
-import { useState } from 'react';
+
 
 const Home = () => {
     const [titulo, setTitulo] = useState("Mundo");
@@ -13,5 +15,8 @@ const Home = () => {
         </div>
     );
 }
+
+
+
 
 export default Home;

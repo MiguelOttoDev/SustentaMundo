@@ -1,3 +1,4 @@
+
 import MapaInterativo from '../Mapa';
 import './Main.css';
 
@@ -17,4 +18,4 @@ const Main = ({ setTitulo, setDistribuidores }) => {
     );
 }
 
-export default Main;
+export default Main

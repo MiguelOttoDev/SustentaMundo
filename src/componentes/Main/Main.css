@@ -12,13 +12,16 @@
 
 }
 
-.main img{
-    width: 600px; 
-    height: auto; 
-    max-width: 100%;
-    display: block; 
-    margin: 0 auto; 
+.main .img {
+    width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+    max-width: 800px; /* Define um limite de largura máxima */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
+
 
 .main h1{
     color: #37D111;

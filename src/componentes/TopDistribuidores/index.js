@@ -4,6 +4,7 @@ import Distribuidores from '../Distribuidores';
 import './TopDistribuidores.css';
 
 const TopDistribuidores = ({ distribuidores }) => {
+
   return (
     <div>
       <h1>Top Distribuidores</h1>
@@ -23,3 +24,4 @@ const TopDistribuidores = ({ distribuidores }) => {
 };
 
 export default TopDistribuidores;
+

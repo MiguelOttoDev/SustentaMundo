@@ -1,3 +1,4 @@
+
 import styles from './buy-smc-card.module.css';
 import plusIcon from '../../../imgs/plus.png';
 import { useSmc } from '../../../context/smcContext';
@@ -18,3 +19,4 @@ const BuySmcCard = () => {
 };
 
 export default BuySmcCard;
+

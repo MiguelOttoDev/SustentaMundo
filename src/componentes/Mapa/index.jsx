@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import styles from './Mapa.module.css'
@@ -255,5 +256,6 @@ const MapaInterativo = ({ setTitulo, setDistribuidores }) => {
       </div>
   );
 };
+
 
 export default MapaInterativo;
