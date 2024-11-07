@@ -1,7 +1,8 @@
 // Home/index.js
 import React, { useState } from 'react';
-import Main from '../../componentes/Main'; // Ajuste o caminho conforme necessário
+import Main from '../../componentes/Main';
 import TopDistribuidores from '../../componentes/TopDistribuidores';
+import VideoPlayer from '../../componentes/Video';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
         <div>
             <Main setTitulo={setTitulo} setDistribuidores={setDistribuidores} />
             <TopDistribuidores distribuidores={distribuidores} />
+            <VideoPlayer/>
         </div>
     );
 }

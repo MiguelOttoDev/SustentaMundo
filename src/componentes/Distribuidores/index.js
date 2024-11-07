@@ -8,8 +8,8 @@ const Distribuidores = ({ nome, estado }) => { // Aceitando nome e estado como p
                 <img src="/img/pessoa.png" alt="Distribuidor" />
             </div>
             <div className='rodape'>
-                <h4>{nome}</h4> {/* Usando a prop nome */}
-                <h5>{estado}</h5> {/* Usando a prop estado */}
+                <h4>{nome}</h4> 
+                <h5>{estado}</h5> 
             </div>
         </div>
     );
